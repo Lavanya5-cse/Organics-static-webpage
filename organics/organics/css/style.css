@@ -1,0 +1,246 @@
+ 
+ .navbar-header img{
+      margin:20px 98px 0px 20px;
+ }
+ .nav li {
+     margin:55px 50px 45px 0px;
+ }
+ .nav li a{
+     font-size:20px;
+     color:#707070;
+ }
+ .fa
+ {
+     margin:50px  45px 45px 0px;
+     padding-right:0px;
+     }
+     .badge
+     {
+         position: relative;
+         right:13px;
+      }
+      .hline
+      {
+          background-color: #87BE45;
+          border: 3px solid #87BE45;
+         }
+         
+         
+         .first
+         {
+              background-color: #F7F7F7;
+               height:600px;
+            }
+    .first h1{
+        font-size:45px;
+        margin:60px 0px 53px 60px;
+    }
+    .image-cropper {
+       
+        position: absolute;
+          left:485px;
+          top:375px;
+       }
+      .second
+      {
+        margin-left:67px;
+ 
+      }
+      .third
+      {
+          width:215px;
+          margin-right:11px;
+           box-shadow: 0px 3px 6px #00000029;
+ float:left;
+      }
+     .third img,.four img,.five img{
+          height:170px;
+          width:215px;
+      }
+      .third h3 {
+          font-size:16px;
+          margin-left:10px;
+      }
+      .third p{
+          color:#68A03F;
+          margin-top:28px;
+          font-size:22px;
+          margin-left:10px;
+
+      }
+      .third button,.four button{
+          background-color:#1D1D1D ;
+          font-size: 16px;
+          color:#FFFFFF;
+          width:180px;
+           height:35px;
+          margin-bottom: 5px;
+          margin-left:15px;
+       }
+.four,.five
+{
+     box-shadow: 0px 3px 6px #00000029;
+    width:215px;
+    margin-right:11px;
+    
+float: left;
+}
+.four h3,.five h3{
+    font-size:16px;
+    margin-left:10px;
+    word-break: break-all;  
+margin-right:10px;
+ }
+.four p,.five p{
+    color:#68A03F;
+    font-size:22px;
+    margin-left:10px;
+}
+.dot
+{
+    height: 35px;
+    width: 35px;
+    background-color: #FFFFFF;
+    opacity: 0.79;
+    border-radius: 50%;
+    display: inline-block;
+    position:absolute;
+    bottom:150px;
+                                       
+}
+.input-group
+{
+    width:200px;
+    margin:0 auto;
+    height:20px;
+   margin-bottom: 5px;
+}
+.input-group button
+{
+    background-color: #1D1D1D;
+    color:white;
+ }
+  .six
+  {
+    background-color: #F7F7F7;
+   }
+  .six img{
+      margin :15% 8% 5% 15%;
+      border:20px solid white;
+  
+  }
+  .sev
+  {
+      margin-top:15%;
+  }
+  .sev h5{
+
+    font-size:20px;
+    color:#141615;
+  }
+  .sev p{
+    font-size:75px;
+    font-weight: thin;
+        }
+        .sev h6
+        {
+            font-size:20px;
+        }
+        .sev button{
+            border-radius: 40px;
+            font-size: 13px;
+            background-color: black;
+            color:white;
+             margin-top:30px;
+             width:190px;
+             height:40px;
+          }
+          .add
+          {
+              margin :72px 0px 0px 40px;
+               
+          }
+          .add h4{
+              color:#707070;
+              font-size:20px;
+          }
+          .add h3{
+            color:#707070;
+            font-size:45px;
+            font-weight: thin;
+        }
+        .map
+        {
+            margin-top:35px;
+        }
+         .last
+         {
+             background-color: #F5F4F4;
+             
+         }
+         .last h3{
+ margin-left:110px;
+ color:#141615;
+ font-size: 20px;
+ opacity: 1;
+         }
+         
+         .last ul li{
+              list-style-type: none;
+              margin-left:80px;
+              margin-top:30px;
+              color:#141615;
+              font-size: 20px;
+          }
+          .last1
+          {
+              background-color: #ECECEC;
+           }
+          .last1 h5{
+              color:#9B9B9B;
+              font-size:18px;
+              text-align:center;
+              
+           }
+          .last1 img{
+              
+              position:absolute;
+               
+          }
+          .last6 h5
+          {
+              text-align: center;
+          }
+          .last2,.last3  
+          {
+              float: left;
+          }
+          .last4
+          {
+            float: left;
+            margin-left:50px;
+            margin-right:10px;
+        }
+      
+       .last5 img{
+          
+           width:425px;
+           position: relative;
+           left:300px;
+            top:42px;
+       }
+       .cart1
+       {
+           border-radius:50%;
+           width:30px;
+            background-color: green;
+           color:white;
+           
+       }
+       .counter
+       {
+           text-decoration: none;
+       }
+        
+     
+     

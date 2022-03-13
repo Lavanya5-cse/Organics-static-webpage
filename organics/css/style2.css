@@ -1,0 +1,10 @@
+@media (max-width: 1200px) {
+    .one{
+ visibility: hidden;
+    } 
+}
+@media (max-width: 990px) {
+    .one1{
+        visibility: hidden;
+    }    
+}

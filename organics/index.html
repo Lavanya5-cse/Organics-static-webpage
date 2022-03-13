@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Page1 </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+       $(document).ready(function() {
+	var count = 0;
+	$(".add-to-cart").click(function(event) {
+		count++;
+		$(".add-to-cart").addClass("size");
+		setTimeout(function() {
+			$(".add-to-cart").addClass("hover");
+		}, 200);
+		setTimeout(function() {
+			$("a.cart1 > span").addClass("counter");
+			$("a.cart1 > span.counter").text(count);
+		}, 400);
+		setTimeout(function() {
+			$(".add-to-cart").removeClass("hover");
+			$(".add-to-cart").removeClass("size");
+		}, 600);
+		event.preventDefault();
+	});
+});
+function incrementValue()
+      {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          if(value<100){
+              value++;
+                  document.getElementById('number').value = value;
+          }
+      }
+      function decrementValue()
+      {
+          var value = parseInt(document.getElementById('number').value, 10);
+          value = isNaN(value) ? 0 : value;
+          if(value>1){
+              value--;
+                  document.getElementById('number').value = value;
+          }
+      
+      }
+       
+</script>
+  
+    
+   </head>
+   <header>
+      <nav class="navbar">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col">
+                  <div class="navbar-header">
+                     <img src="images/img1.png" alt="Image"> 
+                  </div>
+                  <ul class="nav navbar-nav">
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Products </a></li>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+                  <div class="nav navbar-nav navbar-right" style="margin-right:0px;"> 
+                     <i class="fa fa-shopping-basket" style="font-size:51px;height:45px; ">
+                        <sup>   
+                            <a href="#" class="cart1" style="font-size:30px; text-align:center;"><span></span></a>  
+                          </sup>
+                    <!--  <a href="#" class="cart"><span></span></a>-->
+                     </i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <hr class="hline">
+   </header>
+   <body>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col">
+               <div class="text-center">
+                  <img src="images/img2.png" alt="Image" class="rounded" style="position: relative;">
+               </div>
+              
+            </div>
+         </div>
+      </div>
+      <div class="first"> 
+         <div class="container-fluid">
+             
+            <div class="row">
+               <div class="col">
+                   
+                  <h1>The Organic Favourites</h1>
+               </div>
+            </div>
+            <div class="second">
+               <div class="row">
+                  <div class="col">
+                     <div class="third">
+                        <div class="card">
+                           <img src="images/img3.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Organic Onions</h3>
+                              <p>&#x20B9;120 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                            <!--   <button>ADD</button>-->
+                            <button  class="add-to-cart">ADD </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="four">
+                        <div class="card">
+                           <img src="images/img4.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Veg Wash + Fruit & Vegetable Wash (Bottle)</h3>
+                              <p>&#x20B9; 60 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="third">
+                        <div class="card">
+                           <img src="images/img3.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Organic Onions</h3>
+                              <p>&#x20B9; 120 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="five">
+                        <div class="card">
+                           <img src="images/img4.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Veg Wash + Fruit & Vegetable Wash (Bottle)</h3>
+                              <p>&#x20B9; 60
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span> 
+                              </p>
+                                <div class="input-group">
+                                 <span class="input-group-btn">
+                                 <button type="button" class="quantity-left-minus btn btn-dark btn-number"
+                                 onclick="decrementValue()"  data-type="minus" data-field="" style="width:40px;">
+                                 <span class="glyphicon glyphicon-minus"></span>
+                                 </button>
+                                 </span>
+                                 <input type="text" id="number" name="quantity" class="form-control input-number" value="1" min="1" max="100"
+                                    style="text-align: center;border:1px solid white;">
+                                 <span class="input-group-btn">
+                                 <button type="button" onclick="incrementValue()"
+                                  class="quantity-right-plus btn btn-dark btn-number" data-type="plus" data-field="" style="width:40px;">
+                                 <span class="glyphicon glyphicon-plus"></span>
+                                 </button>
+                                 </span>
+                              </div> 
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="third">
+                        <div class="card">
+                           <img src="images/img3.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Organic Onions</h3>
+                              <p>&#x20B9; 120
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>    
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="four" style="height:310px;width:60px;position:absolute;left:1200px;  overflow: hidden; ">
+                        <div class="card" >
+                           <img src="images/img4.png" alt="Image"  class="image-container">
+                           <span class="dot">                                        
+                           <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"  href="#myCarousel" data-slide="next"
+                              style="font-size:20px;color:black;opacity: 0.54;margin-left:10px;margin-top:10px; ">
+                           </i></span>
+                           <div class="card-body">
+                              <h3 style="overflow: hidden;width:195px;">Veg Wash + Fruit & Vegetable Wash (Bottle)</h3>
+                              <p style="width:200px;overflow: hidden;">&#x20B9; 60 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div></div>
+               </div> </div> 
+
+                 <div class="first"> 
+         <div class="container-fluid">
+             
+            <div class="row">
+               <div class="col">
+                   
+                  <h1>Staples Corner</h1>
+               </div>
+            </div>
+            <div class="second">
+               <div class="row">
+                  <div class="col">
+                     <div class="third">
+                        <div class="card">
+                           <img src="images/img3.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Organic Onions</h3>
+                              <p>&#x20B9;120 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="four">
+                        <div class="card">
+                           <img src="images/img4.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Veg Wash + Fruit & Vegetable Wash (Bottle)</h3>
+                              <p>&#x20B9; 60 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="third">
+                        <div class="card">
+                           <img src="images/img3.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Organic Onions</h3>
+                              <p>&#x20B9; 120 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="five">
+                        <div class="card">
+                           <img src="images/img4.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Veg Wash + Fruit & Vegetable Wash (Bottle)</h3>
+                              <p>&#x20B9; 60
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span> 
+                              </p>
+                              <div class="input-group" id="add0">
+                                 <span class="input-group-btn" id="add1">
+                                 <button type="button" class="quantity-left-minus btn btn-dark btn-number" id="minus" onclick="decrementValue1()"
+                                   data-type="minus" data-field="" style="width:40px;">
+                                 <span class="glyphicon glyphicon-minus"></span>
+                                 </button>
+                                 </span>
+                                 <input   id="number1" value="1"  name="quantity" class="form-control input-number"  
+                                    style="text-align: center;border:1px solid white;">
+                                 <span class="input-group-btn">
+                                 <button type="button"  id="add"  onclick="incrementValue2()"
+                                  class="quantity-right-plus btn btn-dark btn-number" data-type="plus" data-field="" style="width:40px;">
+                                 <span class="glyphicon glyphicon-plus"></span>
+                                 </button>
+                                 </span>
+                              </div>
+                              
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="third">
+                        <div class="card">
+                           <img src="images/img3.png" alt="Image"  class="center">
+                           <div class="card-body">
+                              <h3>Organic Onions</h3>
+                              <p>&#x20B9; 120
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>    
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col">
+                     <div class="four" style="height:310px;width:60px;position:absolute;left:1200px;  overflow: hidden; ">
+                        <div class="card" >
+                           <img src="images/img4.png" alt="Image"  class="image-container">
+                           <span class="dot">                                        
+                           <i class="glyphicon glyphicon-chevron-right" aria-hidden="true"  href="#myCarousel" data-slide="next"
+                              style="font-size:20px;color:black;opacity: 0.54;margin-left:10px;margin-top:10px; ">
+                           </i></span>
+                           <div class="card-body">
+                              <h3 style="overflow: hidden;width:195px;">Veg Wash + Fruit & Vegetable Wash (Bottle)</h3>
+                              <p style="width:200px;overflow: hidden;">&#x20B9; 60 
+                                 <span style="color:black;margin-left:100px;font-size: 16px;">1<sub>kg</sub> </span>
+                              </p>
+                              <button class="add-to-cart">ADD</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div></div>
+               </div> </div> 
+           
+      <div class="six">
+        <div class="container-fluid">
+           <div class="row"> 
+
+              <div class="col-sm-6">
+                 <img src="images/img5.png">
+                    </div>
+                
+               <div class="col-sm-6">
+                  <div class="sev">
+                     <h5>Mean Organics brings</h5>
+                     <p>World Class Quality Products</p>
+                     <h6>@your drop step</h6>
+                      <button class="btn btn-dark" type="button">Explore our Products</button>
+                  </div>
+                      <i class="fa fa-chevron-circle-up" style="font-size:28px;color:red;float:right;margin-top:30%;"></i>
+
+                   
+ 
+               </div>
+           
+           
+           
+           
+            </div>  </div> </div> 
+     
+     <div class="add">
+        <div class="container-fluid">
+
+         <div class="row">
+
+            <div class="col">
+
+               <h4>Come explore our</h4>
+            </div>
+         </div>
+
+         <div class="row">
+
+            <div class="col">
+
+               <h3>Store</h3>
+            </div>
+         </div>
+<div class="row">
+   <div class="col-md-6">
+      <img src="images/img6.png" alt="Image"  style="width:518px;height:345px;">
+      
+         <i class='fa fa-map-marker' style='font-size:48px;float:left;margin-top:35px;'></i>
+ 
+         <h1 style="color:#000000;font-size: 40px;margin-top: 35px;margin-bottom:20px;">Manikonda</h1> 
+         <address style="font-size:25px;margin-left:60px;">
+         Plot 37/c,Lanco Hills Road,Opp Lanco<br>&nbsp;&nbsp;Hanging Gardens, Manikonda,<br>&nbsp;&nbsp;Hyderabad, Telangana 500032
+         </address>
+ 
+   </div>
+   <div class="col-md-6">
+      <img src="images/img7.png" alt="Image"  style="width:518px;height:345px;" >
+      <i class='fa fa-map-marker' style='font-size:48px;float:left;margin-top:35px;'></i>
+ 
+         <h1 style="color:#000000;font-size: 40px;margin-top: 35px;margin-bottom:20px;">Gachibowli</h1>
+         <address style="font-size:25px;margin-left:60px;">
+            Plot No.2-54/1,Gachibowli Road,<br>&nbsp;&nbsp;Gachibowli,Hyderabad-500032,Beside<br>&nbsp;&nbsp;
+    Wells Fargo
+</address>
+   </div>
+</div>
+
+
+        </div>
+     </div>
+            
+      
+
+      
+   </body>
+   <footer>
+<div class="last">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col">
+           <div class="last2"> 
+<h3>MEAN ORGANICS</h3>
+<ul>
+   <li>Home</li>
+   <li>About Us</li>
+   <li>Products</li>
+   <li>Locate Us</li>
+   <li>Contact Us</li>
+   
+
+</ul> 
+         </div></div>
+         <div class="col">
+            <div class="last3"> 
+            <h3>MORE INFO</h3>
+            <ul>
+               <li>Search Product</li>
+               <li>Refund Policy</li>
+               <li>Privacy Policy</li>
+               <li>Terms</li>
+            
+            </ul>
+         </div></div>
+         <div class="col">
+            <div class="last4"> 
+            <h3>Follow Us</h3>
+            <i href="#"  class="fa fa-facebook"
+            style="margin-left:100px; margin-top: 20px;font-size: 25px;background-color: white;border-radius: 50%;padding:20px;float:left;
+            "></i>
+<i href="#"  class="fa fa-instagram"
+style=" margin-top: 20px;font-size: 25px;background-color: white;border-radius: 50%;padding:20px;float:left;
+"></i>
+         </div></div>
+         <div class="col">
+            <div class="last5">
+               <img src="images/img9.png">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="last1">
+
+   <div class="container-fluid">    <div class="row">
+      <div class="col">
+         <div class="last6"> 
+         <h5>©2020 Mean Organics</h5>
+      </div>
+      </div>
+      
+   </div>
+ </div>
+</div>
+
+   </footer>
+</html>
